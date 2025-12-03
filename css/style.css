@@ -5,8 +5,10 @@
 }
 .container {
     display: flex;
-    align-items: center;
+    align-items: end;
+    align-content: end;
     justify-content: center;
+    max-height: 100vh;
 }
 
 
@@ -15,26 +17,35 @@
     font-family: "Istok Web", sans-serif;
 }
 .form-login {
+    height: 80%;
     display: grid;
-    gap: 2em;
+    align-items: center;
+    text-align: center;
     color: #fff;
-    padding: 5rem;
-    border: 1px solid #fff;
-    scale: 1.3;
-    border-radius: 3rem;
+    padding: 4rem;
+    /*margin: 1rem;*/
+    /*border: 1px solid #fff;*/
+    font-size: 3rem;
+    /*gap: 2rem;*/
 }
 
 .logo-credi {
-    font-size: 1.5rem;
+    font-size: 4rem;
     font-weight: normal;
+    font-family: "Calibri Light", serif
 }
 .logo-varmont {
-    font-size: 3rem;
+    font-size: 6rem;
     font-weight: bold;
+    font-family: "Istok Web", sans-serif;
 }
 .in-login {
     background-color: black;
     color: white;
     outline: none;
     border: 1px solid white;
+    border-radius: 1rem;
+}
+.btn-send {
+    font-size: 30px !important;
 }
