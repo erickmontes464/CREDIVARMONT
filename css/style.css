@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana,sans-serif;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.logo {
+    color: #fff;
+    font-family: "Istok Web", sans-serif;
+}
+.form-login {
+    display: grid;
+    gap: 2em;
+    color: #fff;
+    padding: 5rem;
+    border: 1px solid #fff;
+    border-radius: 3rem;
+}
+
+.logo-credi {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+.logo-varmont {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.in-login {
+    background-color: black;
+    color: white;
+    outline: none;
+    border: 1px solid white;
+}
