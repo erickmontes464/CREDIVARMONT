@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="text-center d-flex flex-column">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="#">CREDI VARMONT</a>
+
+                <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Pagos de Hoy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="prestamos.html">Nuevo Prestamo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Clientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Reporte</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-day">
+
+        <h2 class="fw-bold">Nuevo Préstamo</h2>
+
+        <label><input class="form-control mt-3 mb-4" type="text" placeholder="Ingrese N° de DNI"></label>
+        <div class="info-user">
+
+            <table class="table text-start">
+                <tr>
+                    <th>NOMBRE:</th>
+                    <td>Erick Vargas Montes</td>
+                </tr>
+
+                <tr>
+                    <th>ALIAS:</th>
+                    <td>Erick</td>
+                </tr>
+
+                <tr>
+                    <th>DNI:</th>
+                    <td>77131818</td>
+                </tr>
+                <tr>
+                    <th>PRESTAMOS:</th>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>FALTA:</th>
+                    <td>S/.50</td>
+                </tr>
+            </table>
+
+        </div>
+
+        <div class="d-flex justify-content-around mt-3">
+            <label for="meses">Meses: </label>
+            <label for="interes">Interés: </label>
+        </div>
+
+        <div class="d-flex justify-content-around p-3">
+            <select class="form-select w-auto" name="meses" id="meses">
+                <option value="1" selected>1 mes</option>
+                <option value="2">2 meses</option>
+            </select>
+
+            <select class="form-select w-auto" name="interes" id="interes">
+                <option value="0.20" selected>20%</option>
+                <option value="0.15">15%</option>
+            </select>
+       </div>
+
+        <div class="d-flex flex-column align-items-center">
+            <label class="p-3" for="cantidad">CANTIDAD S/.</label>
+            <input class="w-75" type="number" name="cantidad" id="cantidad">
+        </div>
+
+        <button class="btn btn-dark m-4" type="submit">PRESTAR</button>
+
+
+    </main>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
