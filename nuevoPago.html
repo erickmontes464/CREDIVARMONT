@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="text-center d-flex flex-column">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="#">CREDI VARMONT</a>
+
+                <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Pagos de Hoy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Prestamos del dia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="prestamos.html">Nuevo Prestamo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Clientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Reporte</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-day">
+
+        <h2 class="fw-bold">Nuevo Pago</h2>
+
+        <label class="d-flex w-75 mx-auto"><input class="form-control" type="text">
+            <button class="btn btn-dark" type="button">Buscar</button>
+        </label>
+        <div class="new-pay">
+            <ul class="list-pay text-center p-2">
+            <li><a href="#" class="btn btn-secondary w-75 m-1">Erick Vargas</a></li>
+            <li><a href="#" class="btn btn-secondary w-75 m-1">Sheyla Ramirez</a></li>
+            <li><a href="#" class="btn btn-secondary w-75 m-1">Jorge López</a></li>
+            <li><a href="#" class="btn btn-secondary w-75 m-1">Ana Mendoza</a></li>
+            <li><a href="#" class="btn btn-secondary w-75 m-1">Ricardo Núñez</a></li>
+            <li><a href="#" class="btn btn-secondary w-75 m-1">Daniela Castro</a></li>
+            <li><a href="#" class="btn btn-secondary w-75 m-1">Mauricio Torres</a></li>
+            <li><a href="#" class="btn btn-secondary w-75 m-1">Camila Ríos</a></li>
+            <li><a href="#" class="btn btn-secondary w-75 m-1">Fernando Salas</a></li>
+            <li><a href="#" class="btn btn-secondary w-75 m-1">Valentina Díaz</a></li>
+            <li><a href="#" class="btn btn-secondary w-75 m-1">Gustavo Herrera</a></li>
+            <li><a href="#" class="btn btn-secondary w-75 m-1">Mariana Soto</a></li>
+            <li><a href="#" class="btn btn-secondary w-75 m-1">Andrés Peña</a></li>
+            <li><a href="#" class="btn btn-secondary w-75 m-1">Lucía Morales</a></li>
+            <li><a href="#" class="btn btn-secondary w-75 m-1">Javier Ruíz</a></li>
+        </ul>
+        </div>
+
+        <div class="opciones-prestamo">
+            <input type="radio" id="prestamo1" name="prestamoSeleccionado" value="P1" class="d-none" checked>
+            <label for="prestamo1" class="tarjeta-prestamo">
+                <div class="contenido">
+                    <p class="titulo">Prestamo 1: S/.500</p>
+                    <p class="detalle">Falta S/400</p>
+                    <p class="fecha">02-08-2025</p>
+                </div>
+            </label>
+
+            <input type="radio" id="prestamo2" name="prestamoSeleccionado" value="P2" class="d-none">
+            <label for="prestamo2" class="tarjeta-prestamo">
+                <div class="contenido">
+                    <p>Prestamo 2: S/.200</p>
+                    <p>Falta S/100</p>
+                    <p>10-08-2023</p>
+                </div>
+            </label>
+        </div>
+        <div class="d-flex justify-content-around m-4">
+            <label class="align-self-center" for="cantidad-pay">Cantidad:</label>
+            <input class="form-control w-50" type="number" name="cantidad-pay" id="cantidad-pay">
+        </div>
+        <button class="btn btn-dark" type="submit">PAGAR</button>
+    </main>
+    <script src="js/bootstrap.js"></script>
+
+</body>
+</html>
