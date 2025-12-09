@@ -4,6 +4,9 @@
     font-family: Cambria,sans-serif;
 }
 
+li {
+    list-style: none;
+}
 .contenedor {
     display: flex;
     align-items: center;
@@ -46,16 +49,50 @@
 .info-user {
     padding: 1rem;
     width: 85%;
-    border: 1px solid black;
+    border: 1px solid gray;
     border-radius: 1.3rem;
     margin: auto;
 }
+.new-pay {
+    height: 41vh;
+    margin: 20px;
+    padding: 10px 0;
+    background-color: #dcdada;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.list-pay {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 0 10px;
+    margin: 0;
+    list-style-type: none;
+}
 
 
+.opciones-prestamo {
+    display: flex;
+    max-width: 100%;
+    justify-content: space-around;
+}
 
+.tarjeta-prestamo {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 7px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    user-select: none;
+}
 
-
-
+input[type="radio"]:checked + .tarjeta-prestamo {
+    color: #fff;
+    background-color: gray;
+}
+.tarjeta-prestamo p {
+    margin: 0;
+}
 
 
 
